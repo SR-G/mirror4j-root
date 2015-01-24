@@ -10,7 +10,7 @@
 
 * Easy to set up
 
-![mir:ror](https://github.com/SR-G/mirror4j/raw/master/violet_rfid_mirror.jpg)
+![mir:ror](https://github.com/SR-G/mirror4j-root/raw/master/violet_rfid_mirror.jpg)
 
 ## Available actions 
 
