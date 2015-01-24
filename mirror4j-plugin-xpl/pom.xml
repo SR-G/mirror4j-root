@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.tensin.mirror4j</groupId>
+	<artifactId>mirror4j-plugin-xpl</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+
+	<description>Mirror4J / XPL plugin</description>
+	<name>mirror4j-plugin-xpl</name>
+	<packaging>jar</packaging>
+
+	<properties>
+		<sourceEncoding>UTF-8</sourceEncoding>
+	</properties>
+
+	<build>
+		<sourceDirectory>src/main/java</sourceDirectory>
+		<resources>
+			<resource>
+				<directory>src/main/java</directory>
+			</resource>
+			<resource>
+				<directory>src/main/run</directory>
+			</resource>
+		</resources>
+		<testSourceDirectory>src/test/java</testSourceDirectory>
+		<testResources>
+			<testResource>
+				<directory>src/main/java</directory>
+			</testResource>
+			<testResource>
+				<directory>src/test/java</directory>
+			</testResource>
+		</testResources>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifestEntries>
+							<Extension-Name>${project.name}</Extension-Name>
+							<Specification-Title>${project.description}</Specification-Title>
+							<Specification-Vendor>Tensin</Specification-Vendor>
+							<Implementation-Vendor>Tensin</Implementation-Vendor>
+							<Implementation-Title>${project.name}</Implementation-Title>
+							<Implementation-Version>${project.version}</Implementation-Version>
+						</manifestEntries>
+					</archive>
+					<excludes>
+						<exclude>**/*.java</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+		</plugins>
+
+	</build>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.tensin.mirror4j</groupId>
+				<artifactId>mirror4j</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.tensin.mirror4j</groupId>
+			<artifactId>mirror4j</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.xpl4java</groupId>
+			<artifactId>xpl4java</artifactId>
+			<version>1.3h</version>
+		</dependency>
+	</dependencies>
+	<url>https://github.com/SR-G/mirror4j-plugin-xpl</url>
+	<organization>
+		<name>tensin</name>
+	</organization>
+	<scm>
+		<url>https://github.com/SR-G/mirror4j-plugin-xpl</url>
+		<developerConnection>sergio</developerConnection>
+		<connection>scm:git:https://github.com/SR-G/mirror4j-plugin-xpl</connection>
+	</scm>
+</project>

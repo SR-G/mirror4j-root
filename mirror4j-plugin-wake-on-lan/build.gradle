@@ -1,0 +1,8 @@
+apply plugin: 'java'  
+
+dependencies {
+    compile project(':mirror4j')
+    
+    testCompile 'junit:junit:4.+'
+    testCompile 'org.mockito:mockito-core:1.9.5'
+}

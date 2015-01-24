@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="src" path="src/main/run"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER" exported="true"/>
+	<classpathentry kind="src" path="/mirror4j" exported="true"/>
+	<classpathentry kind="src" path="/mirror4j-plugin-jsch" exported="true"/>
+	<classpathentry kind="src" path="/mirror4j-plugin-ssh" exported="true"/>
+	<classpathentry kind="src" path="/mirror4j-plugin-xpl" exported="true"/>
+	<classpathentry kind="src" path="/mirror4j-plugin-sonos" exported="true"/>
+	<classpathentry kind="src" path="/mirror4j-plugin-mqtt" exported="true"/>
+	<classpathentry kind="src" path="/mirror4j-plugin-wake-on-lan" exported="true"/>
+</classpath>

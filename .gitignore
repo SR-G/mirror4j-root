@@ -1,0 +1,7 @@
+bin
+dist
+tmp
+target
+work
+build
+.gradle

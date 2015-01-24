@@ -1,0 +1,24 @@
+<mirror purge-on-start="true">
+	<definitions>
+		<mqtt name="broker1" broker-url="tcp://tensin.org:1883" broker-auth="true" broker-username="user1" broker-password="password1" />
+		<mqtt name="broker2" broker-url="tcp://localhost:1883" broker-auth="true" broker-username="user1" broker-password="password1" />
+	</definitions>
+	<ztamp id="33139" state="pose" description="Red rabbit">
+		<operations>
+			<sleep-on-lan name="SLEEP (office PC)" mac="b4:99:ba:f0:89:85" />
+			<sleep-on-lan name="SLEEP (laptop)" mac="a0:48:1c:d3:2a:2f" />
+			<mqtt destination="broker2" broker-topic="topic/test" pattern="${ztamp-id}|${date}|${timestamp}|${device-id}|${ztamp-state}" />
+		</operations>
+	</ztamp>
+	<ztamp id="369175" state="retire" description="Silver rabbit">
+		<operations>
+			<wake-on-lan name="WAKE (office PC)" mac="b4:99:ba:f0:89:85" />
+		</operations>
+	</ztamp>
+	<device state="envers">
+		<operations />
+	</device>
+	<device state="endroit">
+		<operations />
+	</device>
+</mirror>

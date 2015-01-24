@@ -1,0 +1,15 @@
+apply plugin: 'java'  
+
+dependencies {
+    compile project(':mirror4j')
+    compile 'net.schmizz:sshj:0.10.0'
+    compile 'org.bouncycastle:bcprov-jdk16:1.46'
+    compile 'com.google.guava:guava:17.0'
+    
+    testCompile 'junit:junit:4.+'
+    testCompile 'org.mockito:mockito-core:1.9.5'
+}
+
+repositories {
+    maven { url "http://oss.sonatype.org/content/groups/public/" }
+}

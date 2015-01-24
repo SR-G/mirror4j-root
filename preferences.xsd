@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified">
+
+   <xsd:element name="mirror" type="org.tensin.mirror4j.model.configuration.Mirror4JConfiguration" />
+
+   <xsd:complexType name="org.tensin.mirror4j.model.configuration.Mirror4JConfiguration">
+         <xsd:choice maxOccurs="unbounded">
+            <xsd:element name="ztamp" type="org.tensin.mirror4j.model.configuration.ZtampConfiguration" minOccurs="0" maxOccurs="unbounded" />
+            <xsd:element name="device" type="org.tensin.mirror4j.model.configuration.DeviceConfiguration" minOccurs="0" maxOccurs="unbounded" />
+         </xsd:choice>
+   </xsd:complexType>
+
+   <xsd:complexType name="org.tensin.mirror4j.model.configuration.ZtampConfiguration">
+         <xsd:choice maxOccurs="unbounded">
+            <xsd:element name="operations" minOccurs="0" >
+               <xsd:complexType>
+                  <xsd:sequence>
+            			<xsd:element name="IOperation" type="org.tensin.mirror4j.model.operations.IOperation" minOccurs="0" maxOccurs="unbounded" />
+                  </xsd:sequence>
+               </xsd:complexType>
+            </xsd:element>
+         </xsd:choice>
+         <xsd:attribute name="id" type="xsd:string" use="required" />
+         <xsd:attribute name="description" type="xsd:string" />
+         <xsd:attribute name="state" type="xsd:string" use="required" />
+         <xsd:attribute name="active" type="xsd:boolean" />
+   </xsd:complexType>
+
+   <xsd:complexType name="org.tensin.mirror4j.model.configuration.DeviceConfiguration">
+         <xsd:choice maxOccurs="unbounded">
+            <xsd:element name="operations" minOccurs="0" >
+               <xsd:complexType>
+                  <xsd:sequence>
+            			<xsd:element name="IOperation" type="org.tensin.mirror4j.model.operations.IOperation" minOccurs="0" maxOccurs="unbounded" />
+                  </xsd:sequence>
+               </xsd:complexType>
+            </xsd:element>
+         </xsd:choice>
+         <xsd:attribute name="state" type="xsd:string" use="required" />
+   </xsd:complexType>
+</xsd:schema>

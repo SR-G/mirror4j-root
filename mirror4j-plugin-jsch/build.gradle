@@ -1,0 +1,17 @@
+apply plugin: 'java'  
+
+dependencies {
+    compile project(':mirror4j')
+    compile ('org.vngx:vngx-jsch:0.10') {
+        exclude module: 'com.springsource.com.jcraft.jzlib'
+        exclude group: 'com.jcraft.jzlib'
+    }
+    compile 'com.jcraft:jzlib:1.1.3'
+
+    testCompile 'junit:junit:4.+'
+    testCompile 'org.mockito:mockito-core:1.9.5'
+}
+
+repositories {
+    maven { url "http://oss.sonatype.org/content/groups/public/" }
+}

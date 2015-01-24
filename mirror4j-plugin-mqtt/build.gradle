@@ -1,0 +1,13 @@
+apply plugin: 'java'  
+
+dependencies {
+    compile project(':mirror4j')
+    compile 'org.eclipse.paho:mqtt-client:0.4.0'
+
+    testCompile 'junit:junit:4.+'
+    testCompile 'org.mockito:mockito-core:1.9.5'
+}
+
+repositories {
+    maven { url "https://repo.eclipse.org/content/repositories/paho-releases/" }
+}

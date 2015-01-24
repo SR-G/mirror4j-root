@@ -1,0 +1,11 @@
+apply plugin: 'java'  
+
+dependencies {
+    compile project(':mirror4j')
+    compile project(':mirror4j-plugin-jsch')
+    compile project(':mirror4j-plugin-ssh')
+    compile project(':mirror4j-plugin-xpl')
+    compile project(':mirror4j-plugin-sonos')
+    compile project(':mirror4j-plugin-mqtt')
+    compile project(':mirror4j-plugin-wake-on-lan')
+}

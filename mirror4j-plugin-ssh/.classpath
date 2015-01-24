@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER" exported="true"/>
+	<classpathentry kind="src" path="/mirror4j" exported="true"/>
+	<classpathentry sourcepath="C:/Users/u248663/.gradle/caches/modules-2/files-2.1/net.schmizz/sshj/0.10.0/b9d3fb4be808f6404a4fbf46c68852a23d2a9aaa/sshj-0.10.0-sources.jar" kind="lib" path="C:/Users/u248663/.gradle/caches/modules-2/files-2.1/net.schmizz/sshj/0.10.0/35d313db208a25189962266a9bd36553310c65f6/sshj-0.10.0.jar" exported="true">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/u248663/.gradle/caches/modules-2/files-2.1/net.schmizz/sshj/0.10.0/41622c62036ceff3079e86a16190d15bb8fadb73/sshj-0.10.0-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/u248663/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcprov-jdk16/1.46/d2b70567594225923450d7e3f80cd022c852725e/bcprov-jdk16-1.46-sources.jar" kind="lib" path="C:/Users/u248663/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcprov-jdk16/1.46/ce091790943599535cbb4de8ede84535b0c1260c/bcprov-jdk16-1.46.jar" exported="true">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/u248663/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcprov-jdk16/1.46/873a6fe765f33fc27df498a5d1f5bf077e503b2f/bcprov-jdk16-1.46-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/u248663/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/17.0/7ca0efbeb87ca845b5d7a0ac9c21a4b7b95f7b28/guava-17.0-sources.jar" kind="lib" path="C:/Users/u248663/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/17.0/9c6ef172e8de35fd8d4d8783e4821e57cdef7445/guava-17.0.jar" exported="true">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/u248663/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/17.0/18a375325d213ba5ae90706790fbbb3fd51b9a01/guava-17.0-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/u248663/.gradle/caches/modules-2/files-2.1/junit/junit/4.13-SNAPSHOT/6d6667c041ebe42a4ca8f0be9eab9a2868f3bf4/junit-4.13-SNAPSHOT-sources.jar" kind="lib" path="C:/Users/u248663/.gradle/caches/modules-2/files-2.1/junit/junit/4.13-SNAPSHOT/ea829305b327e4b432dbcb65d26a6e8ef661e2bc/junit-4.13-SNAPSHOT.jar" exported="true">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/u248663/.gradle/caches/modules-2/files-2.1/junit/junit/4.13-SNAPSHOT/1f0b08aa3f11e3097dc9809dedfe185164ef3827/junit-4.13-SNAPSHOT-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/u248663/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/1.9.5/46f703fb4266140c544d48a189cb25947eb6333e/mockito-core-1.9.5-sources.jar" kind="lib" path="C:/Users/u248663/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/1.9.5/c3264abeea62c4d2f367e21484fbb40c7e256393/mockito-core-1.9.5.jar" exported="true">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/u248663/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/1.9.5/982f4a74cbff61f56c0868b2fdf71fe63b646794/mockito-core-1.9.5-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/u248663/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.7/acd62e31cc314266e73eebed0b6dd7ea974a0ed/slf4j-api-1.7.7-sources.jar" kind="lib" path="C:/Users/u248663/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.7/2b8019b6249bb05d81d3a3094e468753e2b21311/slf4j-api-1.7.7.jar" exported="true">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/u248663/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.7/f7f3d9c6e2f145a2cc37931c4b604c7f5e96c6c/slf4j-api-1.7.7-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/u248663/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15on/1.50/1de697636e967772b92274fdecb3fd12e000a7d2/bcpkix-jdk15on-1.50-sources.jar" kind="lib" path="C:/Users/u248663/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15on/1.50/f82f869cbf31fdb3419487dd58f4189c33ec9acd/bcpkix-jdk15on-1.50.jar" exported="true">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/u248663/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15on/1.50/56cc7e4e0fcf37cb2ea011e3af2abc856f6406f4/bcpkix-jdk15on-1.50-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/u248663/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/1dc37250fbc78e23a65a67fbbaf71d2e9cbc3c0b/hamcrest-core-1.3-sources.jar" kind="lib" path="C:/Users/u248663/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar" exported="true">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/u248663/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/ad09811315f1d4f5756986575b0ea16b99cd686f/hamcrest-core-1.3-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/u248663/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/1.0/b10c90e57b7bb985a7b6a704769428fe5c2a732c/objenesis-1.0-sources.jar" kind="lib" path="C:/Users/u248663/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/1.0/9b473564e792c2bdf1449da1f0b1b5bff9805704/objenesis-1.0.jar" exported="true">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/u248663/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/1.0/6f18fb1aa4834bb241439b71f4a88b2437c5793f/objenesis-1.0-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/u248663/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcprov-jdk15on/1.50/293fc74de21f7055f7de96850151e37a0b0ceb60/bcprov-jdk15on-1.50-sources.jar" kind="lib" path="C:/Users/u248663/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcprov-jdk15on/1.50/be504b4901d75cbe129a178f5830e6c358ec214c/bcprov-jdk15on-1.50.jar" exported="true">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/u248663/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcprov-jdk15on/1.50/31aa31724cc63e70b176e8551a95c23d7daec29e/bcprov-jdk15on-1.50-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+</classpath>

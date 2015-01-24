@@ -1,0 +1,1 @@
+include 'mirror4j', 'mirror4j-documentation', 'mirror4j-plugin-mqtt', 'mirror4j-plugin-xpl', 'mirror4j-plugin-sonos', 'mirror4j-plugin-jsch', 'mirror4j-plugin-ssh', 'mirror4j-plugin-wake-on-lan'      

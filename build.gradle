@@ -1,0 +1,140 @@
+// === Imports
+apply plugin: 'ssh'
+
+buildscript {
+	repositories {
+		mavenCentral()
+		// maven { url "http://ciq-repository.inetpsa.com/repository/virtual/" }
+		// maven { url "http://yvash590:8081/nexus/content/groups/main-repository/" }
+		maven { url "c:/Program Files/eclipse_DEV/integration/maven/repository/" }
+	}
+	dependencies {
+		classpath 'org.hidetake:gradle-ssh-plugin:0.3.10'
+		classpath 'com.github.rholder:gradle-one-jar:1.0.3'
+	}
+}
+
+// === Global definitions to all projects
+allprojects {
+	task hello << { task -> println "I'm $task.project.name" }
+
+	// === Variables
+	apply plugin: 'java'
+	sourceCompatibility = 1.6
+	version = '1.0.0-SNAPSHOT'
+}
+
+subprojects {
+	hello << {println "- I depend on water"}
+	apply plugin: 'eclipse'
+
+	[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+	// === Repositories
+	repositories {
+		mavenCentral()
+		// maven { url "http://ciq-repository.inetpsa.com/repository/virtual/" }
+		maven { url "c:/Program Files/eclipse_DEV/integration/maven/repository/" }
+	}
+
+	jar {
+		manifest {
+			attributes 'Implementation-Title': 'mirror4j'
+			attributes 'Implementation-Version': version
+		}
+	}
+	
+	sourceSets {
+		main {
+			java { srcDir 'src/main/run/' }
+			resources {
+				srcDir 'src/main/java'
+				srcDir 'src/main/resources'
+			}
+		}
+	}
+
+	// === Eclipse configuration
+	eclipse {
+		classpath {
+			downloadSources = true
+			downloadJavadoc = true
+		}
+	}
+
+	eclipse.jdt.file.beforeMerged { jdt ->
+		// Load general jdt prefs
+		println("Updating eclipse settings")
+		jdt.load(file('../.eclipse/org.eclipse.jdt.core.prefs'))
+	}
+
+	task eclipseSettings(type: Copy) {
+		println("Restoring UI prefs")
+		from rootProject.files("../.eclipse/org.eclipse.jdt.ui.prefs")
+		into project.file('.settings/')
+		outputs.upToDateWhen { false }
+	}
+
+	tasks["eclipse"].dependsOn(eclipseSettings)
+}
+
+project(':mirror4j').hello << { println "- I'm the largest animal that has ever lived on this planet." }
+
+task zip(type: Zip, dependsOn: build) {
+	from ('mirror4j/src/script/mirror4j.sh') {
+		fileMode 0755
+	}
+	from 'mirror4j/mirror4j.xml'
+	def baseLibs = project(':mirror4j').configurations.runtime
+	into('lib') {
+		from baseLibs
+	}
+	into('lib') {
+		from 'mirror4j/build/libs/mirror4j-' + version + '.jar'
+	}
+
+	// TODO remove mirror4j.jar from plugins
+	['mirror4j-plugin-mqtt', 'mirror4j-plugin-xpl', 'mirror4j-plugin-ssh', 'mirror4j-plugin-jsch', 'mirror4j-plugin-wake-on-lan', 'mirror4j-plugin-sonos'].each {
+		def pluginProjectName = ":" + it
+		def pluginPath = 'plugins/' + it
+		def pluginJar = it + '/build/libs/' + it + "-" + version + ".jar"
+		println "Adding plugin [" + it + "]"
+		into(pluginPath) {
+			from (pluginJar)
+			from (project(pluginProjectName).configurations.runtime - baseLibs)
+			exclude('**/mirror4j-' + version + '.jar')
+		}
+	}
+}
+
+// === SSH - http://gradle-ssh-plugin.github.io/
+ssh {
+	identity = file('c:/Profiles/u248663/.ssh/id_rsa')
+	knownHosts = allowAnyHosts    // Disable host key verification
+}
+
+// Add a remote host
+remotes {
+  webServer {
+	host = '192.168.8.40'
+	user = 'root'
+  }
+}
+
+task deploy(type: SshTask, dependsOn: zip) {
+    description = 'Deploys an application to the server.'
+    ssh {
+      // Enable PTY allocation for sudo
+      pty = true
+    }
+    session(remotes.webServer) {
+      // Put a built WAR to the server
+      // put war.archivePath, '/home/login/u248663/'
+      def dest = '/home/applications/mirror4j/'
+      put zip.archivePath, dest
+      // put "$projectDir/src/main/resources/redirect-dev.yml", dest
+      // put "$projectDir/redirections.xml", dest
+      // Restart the application server
+      // execute 'echo "1" ; hostname'
+    }
+}
