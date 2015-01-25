@@ -9,8 +9,8 @@ import org.apache.commons.exec.ExecuteWatchdog;
 import org.apache.commons.exec.PumpStreamHandler;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.tensin.mirror4j.Mirror4JException;
 import org.tensin.mirror4j.model.Constants;
-import org.tensin.mirror4j.model.Mirror4JException;
 
 /**
  * The Class Executor.

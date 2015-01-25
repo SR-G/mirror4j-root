@@ -12,7 +12,6 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.tensin.mirror4j.model.Constants;
-import org.tensin.mirror4j.model.Mirror4JException;
 import org.tensin.mirror4j.model.Processor;
 import org.tensin.mirror4j.model.RFIDReader;
 

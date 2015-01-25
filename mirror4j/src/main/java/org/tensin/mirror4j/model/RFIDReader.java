@@ -13,6 +13,7 @@ import org.apache.commons.io.filefilter.RegexFileFilter;
 import org.apache.commons.io.filefilter.TrueFileFilter;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.tensin.mirror4j.Mirror4JException;
 import org.tensin.mirror4j.model.events.EventDevice;
 import org.tensin.mirror4j.model.events.EventZtamp;
 import org.tensin.mirror4j.model.events.IEvent;

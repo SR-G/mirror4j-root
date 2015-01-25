@@ -19,6 +19,7 @@ import org.simpleframework.xml.core.Persister;
 import org.simpleframework.xml.strategy.Strategy;
 import org.simpleframework.xml.strategy.Visitor;
 import org.simpleframework.xml.strategy.VisitorStrategy;
+import org.tensin.mirror4j.Mirror4JException;
 import org.tensin.mirror4j.model.configuration.DeviceConfiguration;
 import org.tensin.mirror4j.model.configuration.IDefinition;
 import org.tensin.mirror4j.model.configuration.IDefinitionInjection;

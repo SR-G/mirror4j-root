@@ -1,6 +1,6 @@
 package org.tensin.common.tools.documentation.updater;
 
-import org.tensin.mirror4j.model.Mirror4JException;
+import org.tensin.mirror4j.Mirror4JException;
 
 /**
  * The Class SimpleXMLDocumentationException.

@@ -10,7 +10,7 @@ import org.cdp1802.xpl.xPL_MediaHandlerException;
 import org.cdp1802.xpl.xPL_MessageI;
 import org.cdp1802.xpl.xPL_MutableMessageI;
 import org.cdp1802.xpl.device.xPL_DeviceI;
-import org.tensin.mirror4j.model.Mirror4JException;
+import org.tensin.mirror4j.Mirror4JException;
 import org.tensin.mirror4j.model.events.IEvent;
 
 /**

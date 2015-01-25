@@ -7,8 +7,8 @@ import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.ElementList;
 import org.simpleframework.xml.core.Commit;
 import org.tensin.common.tools.documentation.updater.Description;
+import org.tensin.mirror4j.Mirror4JException;
 import org.tensin.mirror4j.helpers.CollectionHelper;
-import org.tensin.mirror4j.model.Mirror4JException;
 import org.tensin.mirror4j.model.State;
 import org.tensin.mirror4j.model.operations.IOperation;
 

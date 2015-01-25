@@ -25,7 +25,7 @@ import java.util.Set;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 
-import org.tensin.mirror4j.model.Mirror4JException;
+import org.tensin.mirror4j.Mirror4JException;
 
 /**
  * The Class ClasspathBooter.

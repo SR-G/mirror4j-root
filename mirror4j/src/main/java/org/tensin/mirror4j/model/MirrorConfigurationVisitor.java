@@ -10,6 +10,7 @@ import org.simpleframework.xml.strategy.Visitor;
 import org.simpleframework.xml.stream.InputNode;
 import org.simpleframework.xml.stream.NodeMap;
 import org.simpleframework.xml.stream.OutputNode;
+import org.tensin.mirror4j.Mirror4JException;
 import org.tensin.mirror4j.model.configuration.IDefinition;
 import org.tensin.mirror4j.model.operations.IOperation;
 

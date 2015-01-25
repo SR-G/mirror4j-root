@@ -1,6 +1,7 @@
 package org.tensin.mirror4j.model;
 
 import org.tensin.mirror4j.AbstractMirror4JTestCase;
+import org.tensin.mirror4j.Mirror4JException;
 import org.tensin.mirror4j.model.events.EventZtamp;
 import org.tensin.mirror4j.model.operations.ShellExecution;
 

@@ -1,6 +1,6 @@
 package org.tensin.mirror4j.model.operations;
 
-import org.tensin.mirror4j.model.Mirror4JException;
+import org.tensin.mirror4j.Mirror4JException;
 import org.tensin.mirror4j.model.events.IEvent;
 
 /**

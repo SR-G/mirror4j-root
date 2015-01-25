@@ -1,7 +1,7 @@
 package org.tensin.mirror4j.plugins.xpl;
 
 import org.junit.Test;
-import org.tensin.mirror4j.model.Mirror4JException;
+import org.tensin.mirror4j.Mirror4JException;
 import org.tensin.mirror4j.model.State;
 import org.tensin.mirror4j.model.events.EventZtamp;
 

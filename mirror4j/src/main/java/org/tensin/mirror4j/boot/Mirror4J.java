@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.Collection;
 import java.util.HashSet;
 
-import org.tensin.mirror4j.model.Mirror4JException;
+import org.tensin.mirror4j.Mirror4JException;
 
 /**
  * The Class Mirror4J.

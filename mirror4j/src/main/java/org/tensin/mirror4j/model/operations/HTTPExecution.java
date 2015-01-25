@@ -12,8 +12,8 @@ import org.apache.logging.log4j.Logger;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Root;
 import org.tensin.common.tools.documentation.updater.Description;
+import org.tensin.mirror4j.Mirror4JException;
 import org.tensin.mirror4j.bean.BeanField;
-import org.tensin.mirror4j.model.Mirror4JException;
 import org.tensin.mirror4j.model.events.IEvent;
 
 /**

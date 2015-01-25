@@ -21,8 +21,8 @@ import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.simpleframework.xml.Attribute;
 import org.simpleframework.xml.Element;
-import org.tensin.mirror4j.model.Mirror4JException;
-import org.tensin.mirror4j.model.Mirror4JRuntimeException;
+import org.tensin.mirror4j.Mirror4JException;
+import org.tensin.mirror4j.Mirror4JRuntimeException;
 
 import com.google.common.base.Objects;
 

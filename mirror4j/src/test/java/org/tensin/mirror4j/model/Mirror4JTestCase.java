@@ -2,6 +2,7 @@ package org.tensin.mirror4j.model;
 
 import org.junit.Test;
 import org.tensin.mirror4j.AbstractMirror4JTestCase;
+import org.tensin.mirror4j.Mirror4JException;
 
 
 /**
